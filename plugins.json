@@ -1,0 +1,53 @@
+{
+  "name": "pitemp",
+  "version": "1.0.0",
+  "meterVersionRequired": "4.2.0-611",
+  "tags": "raspberry pi",
+  "description": "Collects price and volume of a traded stock",
+  "command": "/usr/bin/pi-temp",
+  "postExtract": "/usr/bin/pi-temp",
+  "metrics": [
+    "RASPBERRY_PI_TEMPERATURE"
+  ],
+  "dashboards": [
+    {
+      "name": "Temperature",
+      "layout": "d-w=1&d-h=2&d-pad=15&d-bg=none&d-g-BOUNDARY_STOCK_PRICE=0-0-1-1&d-g-BOUNDARY_STOCK_VOLUME=0-1-1-1"
+    }
+  ],
+  "paramArray": {
+    "itemTitle": [
+      "source",
+      "unit",
+      "interval"
+    ],
+    "schemaTitle": "Source"
+  },
+  "paramSchema": [
+    {
+      "title": "Source",
+      "name": "source",
+      "description": "Label to use on the graph that displays the temperature measurement",
+      "type": "integer",
+      "default": "",
+      "required": false
+    },
+    {
+      "title": "Unit",
+      "name": "unit",
+      "description": "Unit of measure for the temperature",
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    {
+      "title": "Interval",
+      "name": "interval",
+      "description": "How often to collect the temperature measurement",
+      "type": "integer",
+      "default": "1000",
+      "required": true
+    }
+  ]
+}
+

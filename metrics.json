@@ -1,0 +1,10 @@
+{
+  "RASPBERRY_PI_TEMPERATURE": {
+    "displayName": "Temperature",
+    "displayNameShort": "Temperature",
+    "description": "Internal temperature of a Raspberry Pi",
+    "unit": "number",
+    "defaultAggregate": "avg",
+    "defaultResolutionMS": 1000
+  }
+}
