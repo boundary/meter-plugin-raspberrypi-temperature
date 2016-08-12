@@ -29,7 +29,7 @@
       "description": "Label to use on the graph that displays the temperature measurement",
       "type": "string",
       "default": "",
-      "required": false
+      "required": true
     },
     {
       "title": "Unit",
