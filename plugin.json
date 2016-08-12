@@ -35,8 +35,8 @@
       "title": "Unit",
       "name": "unit",
       "description": "Unit of measure for the temperature",
-      "type": "string",
-      "default": "",
+      "type" : { "enum" : [["Celsius", "celsius"], ["Fahrenheit", "fahrenheit"]] },
+      "default" : "celsius",
       "required": true
     },
     {
