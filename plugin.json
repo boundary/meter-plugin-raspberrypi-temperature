@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "meterVersionRequired": "4.2.0-611",
   "tags": "raspberry pi",
-  "description": "Collects price and volume of a traded stock",
-  "command": "/usr/bin/pi-temp",
-  "postExtract": "/usr/bin/pi-temp",
+  "description": "Collects measurements of the internal temperature of a Raspberry PI",
+  "command": "/usr/bin/pitemp",
   "metrics": [
     "RASPBERRY_PI_TEMPERATURE"
   ],
   "dashboards": [
     {
       "name": "Temperature",
-      "layout": "d-w=1&d-h=2&d-pad=15&d-bg=none&d-g-BOUNDARY_STOCK_PRICE=0-0-1-1&d-g-BOUNDARY_STOCK_VOLUME=0-1-1-1"
+      "layout": "d-w=1&d-h=1&d-pad=15&d-light=0&d-bg=none&d-g-RASPBERRY_PI_TEMPERATURE=0-0-1-1"
     }
   ],
   "paramArray": {
